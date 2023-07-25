@@ -12,5 +12,6 @@ public class TC_001 {
         Driver.getDriver().get(ConfigReader.getProperty("amazonURl"));
         Page page = new Page();
         page.aramaKutusu.sendKeys("Iphone", Keys.ENTER);
+        Driver.closeDriver();
     }
 }
